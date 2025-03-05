@@ -1,4 +1,4 @@
-import React from "react";
+import Link from 'next/link'
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
@@ -27,9 +27,12 @@ const Onboarding = () => {
           <p className="text-gray-500 text-sm mt-2">Millions of people have proven it, now it's your turn!</p>
           <div className="flex items-center justify-between mt-4">
             <span className="text-gray-400 text-sm">SKIP</span>
+            <Link href="/listevents">
             <button className="bg-green-500 p-3 rounded-full text-white">
               <ArrowRight size={20} />
             </button>
+            </Link>
+
           </div>
         </div>
       </div>
